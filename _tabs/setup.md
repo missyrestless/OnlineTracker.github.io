@@ -4,9 +4,7 @@ icon: fas fa-info-circle
 order: 2
 ---
 
-## SETUP STEPS
-
-### Rez a copy of the "Discord IM Online Tracker (rez me)" object:
+## Rez a copy of the "Discord IM Online Tracker (rez me)" object:
 
 Drag and Drop the "Discord IM Online Tracker (rez me)" object from your inventory to an in-world location.
 
@@ -14,7 +12,7 @@ The online tracker initially begins to track the owner's online status.
 
 To configure an Avatar to track proceed to setup step 2.
 
-### Edit the "Target_Config" notecard:
+## Edit the "Target_Config" notecard:
 
 - Right click the "Target_Config" notecard in your inventory and select "Open"
 - Replace "target-avatar-uuid" with the UUID of the Avatar you wish to track
@@ -22,13 +20,13 @@ To configure an Avatar to track proceed to setup step 2.
   - Copy and Paste the Key from the Avatar Profile into the Target_Config notecard
 - Save the modified notecard and close the Edit window
 
-### Drag and Drop the "Target_Config" notecard onto the rezzed Discord IM Online Tracker object
+## Drag and Drop the "Target_Config" notecard onto the rezzed Discord IM Online Tracker object
 
 You can repeat this process for as many Avatars as you wish to track, one Avatar per rezzed tracker object.
 
 Each rezzed online tracker object will rename itself with the tracked Avatar display name in its object name.
 
-## CHANGING THE TRACKED AVATAR
+## Changing the Tracked Avatar
 
 To change the tracked Avatar of an existing and already configured Discord IM Online Tracker, edit the object and change the TARGET_UUID setting in the Target_Config notecard.
 
@@ -46,7 +44,7 @@ To change the tracked Avatar of an existing and already configured Discord IM On
 
 The Discord IM Online Tracker will detect the change and reset, tracking the new Avatar's online status
 
-## DEFAULT CONTENTS OF Target_Config NOTECARD
+## Default Contents of Target_Config Notecard
 
 ```bash
 # Only the tracked Avatar UUID is required, all other configuration settings are optional
@@ -74,6 +72,6 @@ END_SETTINGS
 # CHECK_INTERVAL = 120.0
 ```
 
-## FEEDBACK
+## Feedback
 
 Please let us know if you run into issues with this product or have any suggestions. Also let us know if you like it. We are open to feature requests. Email missyrestless@gmail.com or send an IM or notecard to [Missy Restless](secondlife:///app/agent/3506213c-29c8-4aa1-a38f-e12f6d41b804/about) in-world.

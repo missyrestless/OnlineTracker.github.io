@@ -4,12 +4,10 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-## FEATURES
-
-The Discord IM Online Tracker is a sculpted & scripted prim with the following features
+The Discord IM Online Tracker is a sculpted & scripted prim with the following features:
 
 - Can track the online status of any Avatar, not just your friends
-- Can be configured to display the online status in any or all of the following ways:
+- Can be configured to display the online status in any or all of the following ways
     - Send an IM to the owner
     - Post a message to a Discord Channel
     - Display as hover text over the object

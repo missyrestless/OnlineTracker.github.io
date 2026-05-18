@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 3
 ---
 
-## DISCORD SETUP
+## SETUP
 
 ### What is Discord?
 
@@ -73,6 +73,6 @@ Linden Lab use of personal data: https://wiki.secondlife.com/wiki/Linden_Lab_Off
 
 In order to use this product you need to abide to the requirements laid out in those documents (and any documents the Lab might add during your usage of this product).
 
-## FEEDBACK
+## Feedback
 
 Please let us know if you run into issues with this product or have any suggestions. Also let us know if you like it. We are open to feature requests. Email missyrestless@gmail.com or send an IM or notecard to [Missy Restless](secondlife:///app/agent/3506213c-29c8-4aa1-a38f-e12f6d41b804/about) in-world.
