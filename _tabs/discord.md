@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 3
 ---
 
-## SETUP
+## DISCORD SETUP
 
 ### What is Discord?
 
@@ -38,24 +38,14 @@ All three versions work fine - just use whichever Discord gives you.
 
 ### Configuration
 
-Once the Webhook is created, you need to configure the online tracker. A configuration notecard is provided. In case it is missing, create a new one with the name "Target_Config".
+Once the Webhook is created, you need to configure the online tracker using the dialog menu.
 
-The notecard contains variable/argument pairs, separated by equal signs " = ". Everything the online tracker does not recognize, gets ignored.
-
-The "Target_Config" notecard contains two variables pertaining to Discord:
-
-```bash
-# Set to a Discord channel Webhook URL to send online status to Discord [Default: disabled]
-DISCORD_URL = https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# Messages will appear to be from this user [Default: Discord IM Online Tracker]
-DISCORD_USER = Discord IM Online Tracker
-```
-
-"DISCORD_URL" is simply the setting where you input your Webhook URL from Discord (see above). 
-
-Make sure the Webhook exists and is created for the proper channel. You can change it anytime, if you want to have it transmit to a different channel on your server.
-
-To enable online status messages to be posted to your Discord channel, all that is required is configuring the DISCORD_URL setting in the Target_Config notecard with your Discord channel Webhook URL. Note that only lines above the END_SETTINGS line in the notecard get read - the DISCORD_URL setting must be placed above this line.
+1. Have your previously configured Discord channel Webhook URL ready to copy and paste
+1. Click the `Discord IM Online Tracker` in-world object to open the dialog menu.
+1. Click the `Discord` button of the Main dialog menu
+1. Click the `Webhook` button of the Discord dialog menu
+1. Copy your Discord channel Webhook URL and paste it into the Input Box
+1. Click the `Submit` button
 
 ### Data processing & privacy
 
@@ -73,6 +63,6 @@ Linden Lab use of personal data: https://wiki.secondlife.com/wiki/Linden_Lab_Off
 
 In order to use this product you need to abide to the requirements laid out in those documents (and any documents the Lab might add during your usage of this product).
 
-## Feedback
+## FEEDBACK
 
 Please let us know if you run into issues with this product or have any suggestions. Also let us know if you like it. We are open to feature requests. Email missyrestless@gmail.com or send an IM or notecard to [Missy Restless](secondlife:///app/agent/3506213c-29c8-4aa1-a38f-e12f6d41b804/about) in-world.

@@ -4,15 +4,15 @@ icon: fas fa-info-circle
 order: 2
 ---
 
-## Rez a copy of the "Discord IM Online Tracker (rez me)" object:
+## SETUP STEPS
 
-Drag and Drop the "Discord IM Online Tracker (rez me)" object from your inventory to an in-world location.
+### Rez a copy of the "Discord IM Online Tracker (rez me)" object
 
-The online tracker initially begins to track the owner's online status.
+   Drag and Drop the "Discord IM Online Tracker (rez me)" object from your inventory to an in-world location.
 
-To configure an Avatar to track proceed to setup step 2.
+   The online tracker initially begins to track the owner's online status.
 
-## Edit the "Target_Config" notecard:
+### Edit the "Target_Config" notecard
 
 - Right click the "Target_Config" notecard in your inventory and select "Open"
 - Replace "target-avatar-uuid" with the UUID of the Avatar you wish to track
@@ -26,52 +26,28 @@ You can repeat this process for as many Avatars as you wish to track, one Avatar
 
 Each rezzed online tracker object will rename itself with the tracked Avatar display name in its object name.
 
-## Changing the Tracked Avatar
+## DISCORD SETUP
 
-To change the tracked Avatar of an existing and already configured Discord IM Online Tracker, edit the object and change the TARGET_UUID setting in the Target_Config notecard.
+In order to be able to communicate from SL to Discord, you need to create a Discord "Webhook". To do this this, you need your own Discord server or a server you co-administer. For testing purposes, we highly recommend to make a new server (it's free!), or at least create a new channel on your existing server.
 
-### Edit the Discord IM Online Tracker object
+The Webhook is best created in the Discord web application;  NOT on the mobile app! Please refer to the video - https://www.youtube.com/watch?v=AKOIPxqHYI8 - to see how/where to get the Webhook. Be aware that the way the interface looks might have changed since then.
 
-   - Right click the Discord IM Online Tracker object and select "Edit"
-   - Click the Contents tab in the Edit window
+In the channel list, you will find a small cogwheel icon, that gets you to the channel configuration. Click it, chose "Integrations" and click on "Create Webhook". The name of the Webhook is irrelevant (and won't show up anywhere). All you need is the Webhook URL, which looks like this:
 
-### Edit the Target_Config notecard
+https://discord.com/api/webhooks/aaaaaalotofgibberishandnumbersandsuch
 
-   - Right click the Target_Config notecard in the Contents tab and select "Open"
-   - Replace the existing setting of the TARGET_UUID with the new tracked Avatar UUID (Key)
+### Configuration
 
-### Save the Target_Config notecard and close the Edit window
+Once the Webhook is created, you need to configure the online tracker using the dialog menu.
 
-The Discord IM Online Tracker will detect the change and reset, tracking the new Avatar's online status
+- Have your previously configured Discord channel Webhook URL ready to copy and paste
 
-## Default Contents of Target_Config Notecard
+- Click the 'Discord IM Online Tracker' in-world object to open the dialog menu.
 
-```bash
-# Only the tracked Avatar UUID is required, all other configuration settings are optional
-TARGET_UUID = target-avatar-uuid
-END_SETTINGS
-#
-# Optional settings, uncomment & move above END_SETTINGS to enable
-#
-# Set to a Discord channel Webhook URL to send online status to Discord [Default: disabled]
-# DISCORD_URL = https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-#
-# Messages will appear to be from this user [Default: Discord IM Online Tracker]
-# DISCORD_USER = Discord IM Online Tracker
-#
-# Enable or disable Instant Message notification to the owner [Default: TRUE]
-# IM_OWNER = TRUE
-#
-# Enable or disable display of hover text [Default: FALSE]
-# HOVER_TEXT = FALSE
-#
-# Override the displayed target name [Default: use display name]
-# TARGET_NAME = Target Avatar Name
-#
-# Time in seconds between online status checks [Default: 120.0]
-# CHECK_INTERVAL = 120.0
-```
+- Click the 'Discord' button of the Main dialog menu
 
-## Feedback
+- Click the 'Webhook' button of the Discord dialog menu
 
-Please let us know if you run into issues with this product or have any suggestions. Also let us know if you like it. We are open to feature requests. Email missyrestless@gmail.com or send an IM or notecard to [Missy Restless](secondlife:///app/agent/3506213c-29c8-4aa1-a38f-e12f6d41b804/about) in-world.
+- Copy your Discord channel Webhook URL and paste it into the Input Box
+
+- Click the 'Submit' button

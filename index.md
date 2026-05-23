@@ -14,6 +14,11 @@ Messages (IM) or messages to a configured Discord channel.
 - [Getting Started with Online Tracker](https://online.neoman.dev/posts/getting-started-with-online-tracker/)
 - [Online Tracker Github Repository](https://github.com/missyrestless/OnlineTracker#readme)
 
+## Second Life Marketplace Listing
+
+A preconfigured ready-to-deploy Discord IM Online Tracker product can be purchased on the
+Second Life Marketplace at [https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130](https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130).
+
 ### In-World Scripted Object
 
 `Discord IM Online Tracker` is a scripted prim frame that indicates the online status of a configured avatar.
