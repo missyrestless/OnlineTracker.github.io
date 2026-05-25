@@ -1,0 +1,259 @@
+---
+layout: post
+title: Getting Started with Online Tracker
+date: 2026-05-25 13:58 -0700
+---
+
+## Discord IM Online Tracker
+
+The `Discord IM Online Tracker` monitors the online status of any avatar in Second Life and sends notices of login/logoff to the owner of the object and/or a configured Discord channel.
+
+## Table of Contents
+
+- [FEATURES](#features)
+- [CONTENTS](#contents)
+- [SETUP STEPS](#setup-steps)
+- [CONFIGURATION](#configuration)
+- [DISCORD SETUP](#discord-setup)
+- [LICENSE](#license)
+- [RELEASES](#releases)
+- [FEEDBACK](#feedback)
+
+## FEATURES
+
+The Discord IM Online Tracker is a sculpted & scripted prim with the following features
+
+- Can track the online status of any Avatar, not just your friends
+- Can be configured to display the online status in any or all of the following ways:
+    - Send an IM to the owner
+    - Post a message to a Discord Channel
+    - Display as hover text over the object
+    - Send a message to the owner in local chat
+- The tracked Avatar need not be in the same region, grid-wide tracking is performed
+- Elapsed time between login/logout is displayed as well as the login/logout times
+- Previous login/logout times are displayed
+- The online status of the configured Avatar is indicated by the object's border color, red or green
+- The online status messages contain a clickable link to the Avatar's profile
+- Online status notifications can be monitored when you are offline if Discord is configured
+- Secure setting and storage of your Discord Webhook URL using the linkset datastore
+  - No notecard configuration needed, all configuration is performed via dialog menus
+- The frequency of Online status updates can be configured [Default: every 2 minutes]
+- The in-world object is a beveled frame displaying the tracked Avatar's profile pic and online status
+- The beveled frame can be customized in several ways
+    - A custom picture can be configured rather than the Avatar's profile pic
+    - Custom textures can be provided to texture the bevels on the frame
+    - Glow and color of the frame bevels can be customized
+- Touch the object to open a configuration dialog menu (owner only)
+- Users can touch the object to receive a status update if configured (see `OWNER_ONLY` below)
+- Mouse hover over the in-world object will display the online status in the object description
+- Optimized low lag script and only a single prim
+- Particle display when the tracked Avatar logs in or logs out
+- Open Source, GPL Version 3 licensed script, view the source on [Github](https://github.com/missyrestless/OnlineTracker)
+
+## CONTENTS
+
+After unpacking the product box, find the Discord IM Online Tracker folder in your inventory. This folder will contain the following:
+
+- `Discord IM Online Tracker (rez me)` object
+- `Setup Instructions - README` notecard
+- `Quick Setup Guide` notecard
+
+### Permissions
+
+- Discord IM Online Tracker (rez me) object is Copy/Modify/No Transfer
+- Dialog Menu script is Copy/No Modify/No Transfer
+- Online Tracker script is Copy/No Modify/No Transfer
+- Notecards are Copy/Modify/Transfer
+
+## SETUP STEPS
+
+### Rez a copy of the "Discord IM Online Tracker (rez me)" object:
+
+Drag and Drop the `Discord IM Online Tracker (rez me)` object from your inventory to an in-world location.
+
+The online tracker initially begins to track the owner's online status.
+
+### Configure the Avatar you wish to track
+
+To track the online status of an avatar other than the owner you need the avatar's UUID (Key).
+
+Search for the avatar you wish to track using your viewer's Search bar and open the avatar's Profile.
+
+The avatar's UUID is the `Key` field, a string of digits and letters separated by dashes
+(near the top, just below the `Name` field). Copy the avatar's `Key` from their Profile.
+
+- Click the rezzed Online Tracker object
+- A dialog menu will be presented upon owner touch of the object.
+- Click the `Target AVI` button - a menu of options to manage the target Avatar will open
+- Click the `Input UUID` button - a text box will open
+- Copy and Paste the UUID of the Avatar you wish to track into the text box
+- Click the `Submit` button
+
+### Configure the Discord Webhook URL
+
+- Click the rezzed Online Tracker object
+- A dialog menu will be presented upon owner touch of the object.
+- Click the `Discord` button - a menu of options to manage Discord integration will open
+- Click the `Webhook` button - a text box will open
+- Copy and Paste your Webhook URL into the text box
+- Click the `Submit` button
+
+### Additional Avatar Tracking
+
+You can repeat this process for as many Avatars as you wish to track, one Avatar per rezzed tracker object.
+
+Each rezzed online tracker object will rename itself with the tracked Avatar display name in its object name.
+
+## CONFIGURATION
+
+The owner of the rezzed `Discord IM Online Tracker` object can configure and customize it by clicking the object. A dialog menu is displayed with buttons to configure the object's behavior and appearance. These dialog menus can be used to:
+
+- Enter the tracked Avatar UUID
+- Enter your Discord channel Webhook URL
+- Enable or disable status display in Hover Text
+- Enable or disable tinting of the frame border to further indicate online status
+- Enable or disable frame border textures/colors
+- Enable or disable particle displays
+- Select frame border online and offline textures
+- Select frame border online and offline tint color
+- Select frame online and offline glow status
+- Select a custom texture to display rather than the tracked avatar's profile pic
+- Start or Stop tracking online status
+
+The default settings for all configuration parameters should work well. However, if you wish to customize the object and its behavior you can do so in a variety of ways:
+
+- Enable or disable IM notifications to owner
+    - Default: IM notifications to owner are enabled
+- Enable or disable notifications to all
+    - If enabled non-owner users can click the object to get an online status message in local chat
+    - Default: restrict notifications to owner
+- Enable or disable hover text display
+    - Default: hover text is disabled
+- Set the target avatar display name to use
+    - Notification messages will refer to the target avatar by this name
+    - Default: the target avatar's display name is used
+- Set the interval, in seconds, between online status checks
+    - Note: the interval between status checks may take longer due to delays in the request
+    - Default: interval between checks is 120 seconds (2 minutes)
+- Set the frame style
+    - The object is a beveled frame and the sides are textured and colored to indicate status
+    - Currently two frame styles are supported, `RGB` and `Texture`
+    - Default frame style is `Texture`
+- Set the online texture to use for `Texture` frame style
+    - Select from several provided textures or add your own textures to the object contents
+    - Online texture names must end in the substring `-Online`
+      - For example, to add the texture `Apple`, rename it to `Apple-Online` and drag it into the object Contents
+    - Select `Settings` -> `Pick Frame` -> `On Frame` to set the texture used for online status
+- Set the offline texture to use for `Texture` frame style
+    - Select from several provided textures or add your own textures to the object contents
+    - Offline texture names must end in the substring `-Offline`
+      - For example, to add the texture `Grape`, rename it to `Grape-Offline` and drag it into the object Contents
+    - Select `Settings` -> `Pick Frame` -> `Off Frame` to set the texture used for offline status
+- Enable or disable tinting of side textures
+    - Default: tinting is enabled
+- Set the color vector to use for tinting the sides to indicate online
+    - Default: `<0.180, 0.800, 0.251>` is used to indicate online status
+- Set the color vector to use for tinting the sides to indicate offline
+    - Default: `<1.000, 0.255, 0.212>` is used to indicate offline status
+- Set the online glow status
+    - Default: the online glow status is set to `0.2`
+- Set the offline glow status
+    - Default: the offline glow status is set to `0.0`
+- Specify if the in-world object will emit a particle display on login/logout/touch
+    - Default: particle displays are enabled by default
+- Set an alternate picture to use on the main face of the prim
+    - Default: the profile picture of the tracked avatar is displayed on prim face 0
+    - Drag and Drop a custom texture to display on prim face 0 into the object's Contents
+    - Custom profile texture names must end in the substring `-Profile`
+      - For example, to add the texture `Betty`, rename it to `Betty-Profile` and drag it into the object Contents
+    - Select `Settings` -> `Custom Pic` from the main menu to set the texture displayed on face 0
+
+## DISCORD SETUP
+
+### What is Discord?
+
+Discord is a chat platform very popular among gamers. Using Discord is free, and everyone can set up a `Discord server` for free as well! In this server, you can create channels. The Discord IM Online Tracker can be configured to post status messages to a Discord channel. For more information see https://en.wikipedia.org/wiki/Discord_(software) and https://discord.com/blog/starting-your-first-discord-server
+
+### Getting started
+
+In order to be able to communicate from SL to Discord, you need to create a `Webhook`. To do this this, you need your own Discord server or a server you co-administer. For testing purposes, we highly recommend to make a new server (it's free!), or at least create a new channel on your existing server.
+
+The Webhook is best created in the Discord web application;  NOT on the mobile app! Please refer to the video - https://www.youtube.com/watch?v=AKOIPxqHYI8 - to see how/where to get the Webhook. Be aware that the way the interface looks might have changed since then.
+
+In the channel list, you will find a small cogwheel icon, that gets you to the channel configuration. Click it, chose `Integrations` and click on `Create Webhook`. The name of the Webhook is irrelevant (and won't show up anywhere). All you need is the Webhook URL, which looks like this:
+
+```
+https://discord.com/api/webhooks/aaaaaalotofgibberishandnumbersandsuch
+```
+
+The Webhook might also look like this:
+
+```
+https://discordapp.com/api/webhooks/aaaaaalotofgibberishandnumbersandsuch
+```
+
+Or like this:
+
+```
+https://ptb.discord.com/api/webhooks/aaaaaalotofgibberishandnumbersandsuch
+```
+
+All three versions work fine - just use whichever Discord gives you.
+
+### Configuration
+
+Once the Webhook is created, you need to configure the online tracker using the dialog menu.
+
+1. Have your previously configured Discord channel Webhook URL ready to copy and paste
+1. Click the `Discord IM Online Tracker` in-world object to open the dialog menu.
+1. Click the `Discord` button of the Main dialog menu
+1. Click the `Webhook` button of the Discord dialog menu
+1. Copy your Discord channel Webhook URL and paste it into the Input Box
+1. Click the `Submit` button
+
+### Data processing & privacy
+
+This product communicates directly from Second Life to Discord. It establishes a direct transmission from the object in Second Life to the Discord servers. At no single point does the communication get stored, relayed, routed, redirected, or otherwise processed by us, or any entity under our control. We can't, for obvious reasons, vouch for the operators of Second Life or Discord. Please refer to their respective privacy policies.
+
+#### Linden Lab's rules & regulations
+
+The Lab has repeatedly refined resident's rights in various documents. As a user of this product (or any product of broadly similar nature), you are obliged to adhere to the regulations in those documents.
+
+Second Life Terms of Service: https://www.lindenlab.com/tos
+
+Second Life Community Standards: https://www.lindenlab.com/legal/community-standards
+
+Linden Lab use of personal data: https://wiki.secondlife.com/wiki/Linden_Lab_Official:Using_Personal_Data
+
+In order to use this product you need to abide to the requirements laid out in those documents (and any documents the Lab might add during your usage of this product).
+
+## LICENSE
+
+The `Online_Tracker.lsl` and `Dialog_Menu.lsl` scripts are released under the terms of the GNU General Public License version 3 (GPLv3). This is a strong copyleft free software license. Its primary terms guarantee users the freedom to run, study, share, and modify the software. In return, any publicly distributed modifications or derivative works must also be released under the same GPLv3 terms.
+
+### Core Permissions
+
+- Commercial and Private Use: You can use, modify, and privately use the software for any purpose, including commercial operations.
+- Redistribution: You are permitted to share or sell the software, provided you pass on the exact same freedoms to recipients.
+
+### Key Obligations
+
+- Source Code Disclosure: If you distribute a compiled binary to the public, you must also provide the complete, corresponding source code.
+- Notice Requirements: You must keep all original copyright notices intact and visibly display that the modified work is licensed under the GPLv3.
+- Same License (Copyleft): Any additions, modifications, or derivatives must be made completely free and licensed under the same GPLv3 terms.
+
+### Second Life and Open Source
+
+Software theft and piracy is rampant in Second Life. For example, almost all of the commercial Animation Overriders (AO) available in Second Life are based on the GPL AO created years ago by Zhao but none of these commercial vendors make their source code available nor have they complied with the licensing terms of the GPL. They reap significant profits and do not contribute back to the open source community. It is basically the Wild Wild West out there with little or no enforcement of license terms and very little action from Linden Labs to curb this behavior.
+
+The Truth &amp; Beauty Lab creates open source projects for Second Life and complies with open source licensing in all of its products and projects. We encourage others to do so as well. Open source thrives when there is an active community contributing to its development and adoption. In the absence of any effective enforcement mechanism, compliance and contribution to open source projects in Second Life must rely almost entirely on a community of cooperative and supportive individuals. Please join us in this effort.
+
+## RELEASES
+
+To create a Discord IM Online Tracker from release artifacts in the [Github repository](https://github.com/missyrestless/OnlineTracker#readme), download the `Online_Tracker.lslo` and `Dialog_Menu.lslo` optimized LSL scripts from the latest release. Upload these to Second Life and copy them into a prim.
+
+Note that creating a custom scripted prim from release artifacts may not function as expected. The prim needs to be sculpted in the proper manner and prim faces numbered matching what the script expects. The Second Life Marketplace listing for this product includes a rezzable object already prepared in this manner. The DIY approach using release artifacts may require additional effort but is provided for those who wish to experiment and customize.
+
+## FEEDBACK
+
+Please let us know if you run into issues with this product or have any suggestions. Also let us know if you like it. We are open to feature requests. Email missyrestless@gmail.com or send an IM or notecard to [Missy Restless](secondlife:///app/agent/3506213c-29c8-4aa1-a38f-e12f6d41b804/about) in-world.

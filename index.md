@@ -28,6 +28,7 @@ The object can be configured to also send status messages to a Discord channel.
 
 - [Online Tracker Initial Setup](https://online.neoman.dev/setup/)
 - [Online Tracker Discord Setup](https://online.neoman.dev/discord/)
+- [Online Tracker Configuration](https://online.neoman.dev/configuration/)
 
 ## Disclaimer
 
