@@ -6,48 +6,40 @@ order: 2
 
 ## SETUP STEPS
 
-### Rez a copy of the "Discord IM Online Tracker (rez me)" object
+### Rez a copy of the "Discord IM Online Tracker (rez me)" object:
 
-   Drag and Drop the "Discord IM Online Tracker (rez me)" object from your inventory to an in-world location.
+Drag and Drop the `Discord IM Online Tracker (rez me)` object from your inventory to an in-world location.
 
-   The online tracker initially begins to track the owner's online status.
+The online tracker initially begins to track the owner's online status.
 
-### Edit the "Target_Config" notecard
+### Configure the Avatar you wish to track
 
-- Right click the "Target_Config" notecard in your inventory and select "Open"
-- Replace "target-avatar-uuid" with the UUID of the Avatar you wish to track
-  - The UUID of an Avatar is displayed in their Profile as the Key just under their Name
-  - Copy and Paste the Key from the Avatar Profile into the Target_Config notecard
-- Save the modified notecard and close the Edit window
+To track the online status of an avatar other than the owner you need the avatar's UUID (Key).
 
-## Drag and Drop the "Target_Config" notecard onto the rezzed Discord IM Online Tracker object
+Search for the avatar you wish to track using your viewer's Search bar and open the avatar's Profile.
+
+The avatar's UUID is the `Key` field, a string of digits and letters separated by dashes
+(near the top, just below the `Name` field). Copy the avatar's `Key` from their Profile.
+
+- Click the rezzed Online Tracker object
+- A dialog menu will be presented upon owner touch of the object.
+- Click the `Target AVI` button - a menu of options to manage the target Avatar will open
+- Click the `Input UUID` button - a text box will open
+- Copy and Paste the UUID of the Avatar you wish to track into the text box
+- Click the `Submit` button
+
+### Configure the Discord Webhook URL
+
+- Click the rezzed Online Tracker object
+- A dialog menu will be presented upon owner touch of the object.
+- Click the `Discord` button - a menu of options to manage Discord integration will open
+- Click the `Webhook` button - a text box will open
+- Copy and Paste your Webhook URL into the text box
+- Click the `Submit` button
+
+### Additional Avatar Tracking
 
 You can repeat this process for as many Avatars as you wish to track, one Avatar per rezzed tracker object.
 
 Each rezzed online tracker object will rename itself with the tracked Avatar display name in its object name.
 
-## DISCORD SETUP
-
-In order to be able to communicate from SL to Discord, you need to create a Discord "Webhook". To do this this, you need your own Discord server or a server you co-administer. For testing purposes, we highly recommend to make a new server (it's free!), or at least create a new channel on your existing server.
-
-The Webhook is best created in the Discord web application;  NOT on the mobile app! Please refer to the video - https://www.youtube.com/watch?v=AKOIPxqHYI8 - to see how/where to get the Webhook. Be aware that the way the interface looks might have changed since then.
-
-In the channel list, you will find a small cogwheel icon, that gets you to the channel configuration. Click it, chose "Integrations" and click on "Create Webhook". The name of the Webhook is irrelevant (and won't show up anywhere). All you need is the Webhook URL, which looks like this:
-
-https://discord.com/api/webhooks/aaaaaalotofgibberishandnumbersandsuch
-
-### Configuration
-
-Once the Webhook is created, you need to configure the online tracker using the dialog menu.
-
-- Have your previously configured Discord channel Webhook URL ready to copy and paste
-
-- Click the 'Discord IM Online Tracker' in-world object to open the dialog menu.
-
-- Click the 'Discord' button of the Main dialog menu
-
-- Click the 'Webhook' button of the Discord dialog menu
-
-- Copy your Discord channel Webhook URL and paste it into the Input Box
-
-- Click the 'Submit' button
