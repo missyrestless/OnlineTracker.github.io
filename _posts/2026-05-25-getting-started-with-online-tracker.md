@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Getting Started with Online Tracker
+description: How to setup and configure the Discord IM Online Tracker to monitor a Second Life avatar's online status
 date: 2026-05-25 13:58 -0700
+category: [Setup]
+tag: [online, discord, tracker, monitor, login, logoff, IM, notification, secondlife]
+pin: true
 ---
 
 ## Discord IM Online Tracker
