@@ -1,6 +1,6 @@
 ---
 icon: fas fa-info-circle
-order: 8
+order: 9
 ---
 
 This site acts as a repository for documentation of the Truth & Beauty Lab projects used to track the online status of avatars in Second Life.
