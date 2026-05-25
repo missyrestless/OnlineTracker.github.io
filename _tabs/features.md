@@ -19,11 +19,12 @@ The Discord IM Online Tracker is a sculpted & scripted prim with the following f
 - The online status messages contain a clickable link to the Avatar's profile
 - Online status notifications can be monitored when you are offline if Discord is configured
 - Secure setting and storage of your Discord Webhook URL using the linkset datastore
+  - No notecard configuration needed, all configuration is performed via dialog menus
 - The frequency of Online status updates can be configured [Default: every 2 minutes]
 - The in-world object is a beveled frame displaying the tracked Avatar's profile pic and online status
 - The beveled frame can be customized in several ways
     - A custom picture can be configured rather than the Avatar's profile pic
-    - Custom textures or texture UUIDs can be provided to texture the bevels on the frame
+    - Custom textures can be provided to texture the bevels on the frame
     - Glow and color of the frame bevels can be customized
 - Touch the object to open a configuration dialog menu (owner only)
 - Users can touch the object to receive a status update if configured (see `OWNER_ONLY` below)
@@ -31,3 +32,4 @@ The Discord IM Online Tracker is a sculpted & scripted prim with the following f
 - Optimized low lag script and only a single prim
 - Particle display when the tracked Avatar logs in or logs out
 - Open Source, GPL Version 3 licensed script, view the source on [Github](https://github.com/missyrestless/OnlineTracker)
+
