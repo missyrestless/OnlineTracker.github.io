@@ -4,8 +4,6 @@ icon: fas fa-info-circle
 order: 3
 ---
 
-## CONFIGURATION
-
 The owner of the rezzed `Discord IM Online Tracker` object can configure and customize it by clicking the object. A dialog menu is displayed with buttons to configure the object's behavior and appearance. These dialog menus can be used to:
 
 - Enter the tracked Avatar UUID

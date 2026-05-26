@@ -55,7 +55,7 @@ All you need is the Webhook URL, which looks like this:
 https://discord.com/api/webhooks/aaaaaalotofgibberishandnumbersandsuch
 ```
 
-Click `Copy Webhook URL`.
+Click `Copy Webhook URL` to copy the Webhook URL to your clipboard.
 
 ## Step-by-Step Guide using Server Settings
 
