@@ -4,7 +4,9 @@ icon: fas fa-info-circle
 order: 2
 ---
 
-## SETUP STEPS
+Purchase the `Discord IM Online Tracker` on the [Second Life Marketplace](https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130).
+
+## Setup Steps
 
 ### Rez a copy of the "Discord IM Online Tracker (rez me)" object:
 
@@ -43,3 +45,6 @@ You can repeat this process for as many Avatars as you wish to track, one Avatar
 
 Each rezzed online tracker object will rename itself with the tracked Avatar display name in its object name.
 
+## Configuration
+
+See https://online.neoman.dev/configuration for details on configuring the `Discord IM Online Tracker`.

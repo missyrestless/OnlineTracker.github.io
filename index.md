@@ -17,7 +17,7 @@ Messages (IM) or messages to a configured Discord channel.
 ## Second Life Marketplace Listing
 
 A preconfigured ready-to-deploy Discord IM Online Tracker product can be purchased on the
-Second Life Marketplace at [https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130](https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130).
+[Second Life Marketplace](https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130).
 
 ### In-World Scripted Object
 

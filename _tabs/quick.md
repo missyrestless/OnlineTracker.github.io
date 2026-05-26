@@ -11,8 +11,7 @@ This document is an abbreviated quick setup guide. See the full setup instructio
 
 ## Setup
 
-Purchase the `Discord IM Online Tracker` on the Second Life Marketplace at
-[https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130](https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130)
+Purchase the `Discord IM Online Tracker` on the [Second Life Marketplace](https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130).
 
 ### Rez a copy of the Discord IM Online Tracker (rez me) object
 
