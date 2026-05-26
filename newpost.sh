@@ -15,3 +15,11 @@ title="$1"
 shift
 
 bundle exec jekyll post "${title}" $*
+
+postname=$(ls -1tr _posts | tail -1)
+
+[ -f footer.md ] && {
+  [ -f _posts/${postname} ] && {
+      cat footer.md >> _posts/${postname}
+  }
+}
