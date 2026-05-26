@@ -54,7 +54,7 @@ If you have IM to Email notification configured then the IM may also serve to al
 If you need another resident to respond with an acceptance dialog or permission dialog then they
 cannot do that when offline. For example, to invite someone to a group.
 
-> Knowing when a resident is online provides you with a window in which to make requests that require acceptance
+> Knowing when a resident is online can assist with when to make requests that require acceptance
 {: .prompt-info }
 
 ## Use Case: Scheduling Roles
