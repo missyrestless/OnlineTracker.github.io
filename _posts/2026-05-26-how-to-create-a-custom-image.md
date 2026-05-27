@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'HOW-TO: Create a Custom Image'
+title: 'How to Create a Custom Image'
 description: How to add and configure a custom image for display on the Discord IM Online Tracker
 date: 2026-05-26 19:20 -0700
 category: [Setup]

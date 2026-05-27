@@ -8,10 +8,13 @@ The owner of the rezzed `Discord IM Online Tracker` object can configure and cus
 
 - Enter the tracked Avatar UUID
 - Enter your Discord channel Webhook URL
+- Enable or disable Owner only access
+- Enable or disable IM Owner online status updates
 - Enable or disable status display in Hover Text
 - Enable or disable tinting of the frame border to further indicate online status
 - Enable or disable frame border textures/colors
 - Enable or disable particle displays
+- Enable or disable object transparency
 - Select frame border online and offline textures
 - Select frame border online and offline tint color
 - Select frame online and offline glow status
@@ -21,6 +24,7 @@ The owner of the rezzed `Discord IM Online Tracker` object can configure and cus
 The default settings for all configuration parameters should work well. However, if you wish to customize the object and its behavior you can do so in a variety of ways:
 
 - Enable or disable IM notifications to owner
+    - If enabled the Owner recieves Instant Message online status notifications
     - Default: IM notifications to owner are enabled
 - Enable or disable notifications to all
     - If enabled non-owner users can click the object to get an online status message in local chat
@@ -57,8 +61,11 @@ The default settings for all configuration parameters should work well. However,
     - Default: the online glow status is set to `0.2`
 - Set the offline glow status
     - Default: the offline glow status is set to `0.0`
-- Specify if the in-world object will emit a particle display on login/logout/touch
+- Enable or disable particle displays on login/logout/touch
     - Default: particle displays are enabled by default
+- Enable or disable in-world object transparency
+    - Some may choose to hide the Online Tracker object from view
+    - Default: object is visible by default
 - Set an alternate picture to use on the main face of the prim
     - Default: the profile picture of the tracked avatar is displayed on prim face 0
     - Drag and Drop a custom texture to display on prim face 0 into the object's Contents

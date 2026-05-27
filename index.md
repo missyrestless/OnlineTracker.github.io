@@ -21,7 +21,7 @@ to the owner of the object and/or a configured Discord channel.
 
 ## Second Life Marketplace Listing
 
-A preconfigured ready-to-deploy Discord IM Online Tracker product can be purchased on the
+A preconfigured ready-to-deploy Discord IM Online Tracker is available on the
 [Second Life Marketplace](https://marketplace.secondlife.com/p/Discord-IM-Online-Tracker/28289130).
 
 ### In-World Scripted Object
@@ -35,6 +35,7 @@ The object can be configured to also send status messages to a Discord channel.
 - [Online Tracker Discord Setup](https://online.neoman.dev/discord/)
   - [How to Create a Discord Webhook](https://online.neoman.dev/posts/how-to-create-a-discord-webhook)
 - [Online Tracker Configuration](https://online.neoman.dev/configuration/)
+  - [How to Create a Custom Image](https://online.neoman.dev/posts/how-to-create-a-custom-image)
 
 ## Disclaimer
 
